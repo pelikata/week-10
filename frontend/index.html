@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>This is FRONTEND</title>
-</head>
-<body>
-	<div id="root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>This is FRONTEND</title>
+  </head>
+  <body>
+    <div id="root">
+      <form id="add-category" action="https://www.mavcsoport.hu/">
+        <label for="name">Név:</label>
+        <input type="text" name="name" id="name" />
+        <label for="category">Kategória:</label>
+        <input type="text" name="category" id="category" />
+        <label for="price">Ár: </label>
+        <input type="text" name="price" id="price" />
+        <input type="submit" value="Küldés" />
+      </form>
+      <p id="success-text"></p>
+    </div>
+  </body>
 </html>
